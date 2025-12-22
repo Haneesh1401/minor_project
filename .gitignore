@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+
+# Large data files
+data/raw_modis/
+data/era5_raw/
+*.tif
+*.hdf
+*.nc
+
+# OS files
+.DS_Store
+Thumbs.db
