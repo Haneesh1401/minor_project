@@ -42,23 +42,33 @@ Satellite Remote Sensing (MODIS NDVI)
 ConvLSTM (Convolutional LSTM)
 
 📂 Project Structure
-Minor_project/
-├── data/                     # (Ignored in Git) Generated datasets
-│   └── NDVI arrays, ConvLSTM inputs
-│
-├── notebooks/                # Jupyter notebooks
-│   ├── data_preprocessing.ipynb
-│   ├── ndvi_generation.ipynb
-│   └── model_training.ipynb
-│
-├── scripts/                  # Python scripts (optional)
-│   ├── preprocess.py
-│   └── train_model.py
-│
-├── .gitignore
-├── .gitattributes
-├── requirements.txt
-└── README.md
+data/ (Ignored in Git – Generated datasets)
+
+NDVI arrays
+
+ConvLSTM inputs
+
+notebooks/ (Jupyter notebooks)
+
+data_preprocessing.ipynb
+
+ndvi_generation.ipynb
+
+model_training.ipynb
+
+scripts/ (Python scripts – optional)
+
+preprocess.py
+
+train_model.py
+
+.gitignore
+
+.gitattributes
+
+requirements.txt
+
+README.md
 
 
 🚫 Dataset Handling (Important)
@@ -157,4 +167,5 @@ Improve prediction resolution
 
 
 Deploy using Streamlit or Flask
+
 
