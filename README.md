@@ -43,9 +43,8 @@ ConvLSTM (Convolutional LSTM)
 
 📂 Project Structure
 Minor_project/
-│
 ├── data/                     # (Ignored in Git) Generated datasets
-│   └── (NDVI arrays, ConvLSTM inputs)
+│   └── NDVI arrays, ConvLSTM inputs
 │
 ├── notebooks/                # Jupyter notebooks
 │   ├── data_preprocessing.ipynb
@@ -54,7 +53,7 @@ Minor_project/
 │
 ├── scripts/                  # Python scripts (optional)
 │   ├── preprocess.py
-│   ├── train_model.py
+│   └── train_model.py
 │
 ├── .gitignore
 ├── .gitattributes
@@ -158,3 +157,4 @@ Improve prediction resolution
 
 
 Deploy using Streamlit or Flask
+
