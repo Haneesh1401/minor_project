@@ -42,33 +42,22 @@ Satellite Remote Sensing (MODIS NDVI)
 ConvLSTM (Convolutional LSTM)
 
 📂 Project Structure
-data/ (Ignored in Git – Generated datasets)
-
-NDVI arrays
-
-ConvLSTM inputs
-
-notebooks/ (Jupyter notebooks)
-
-data_preprocessing.ipynb
-
-ndvi_generation.ipynb
-
-model_training.ipynb
-
-scripts/ (Python scripts – optional)
-
-preprocess.py
-
-train_model.py
-
-.gitignore
-
-.gitattributes
-
-requirements.txt
-
-README.md
+| Component                    | Description                                                       |
+| ---------------------------- | ----------------------------------------------------------------- |
+| **data/**                    | Generated datasets (ignored in Git to manage storage efficiently) |
+| ↳ NDVI arrays                | Satellite-derived vegetation index data                           |
+| ↳ ConvLSTM inputs            | Preprocessed sequences for model training                         |
+| **notebooks/**               | Jupyter notebooks used for experimentation and analysis           |
+| ↳ `data_preprocessing.ipynb` | Data cleaning and preprocessing                                   |
+| ↳ `ndvi_generation.ipynb`    | NDVI computation from satellite data                              |
+| ↳ `model_training.ipynb`     | ConvLSTM model training and evaluation                            |
+| **scripts/**                 | Modular Python scripts                                            |
+| ↳ `preprocess.py`            | Automated data preprocessing                                      |
+| ↳ `train_model.py`           | Model training pipeline                                           |
+| `.gitignore`                 | Excludes large and unnecessary files                              |
+| `.gitattributes`             | Git LFS configuration                                             |
+| `requirements.txt`           | Project dependencies                                              |
+| `README.md`                  | Project documentation and overview                                |
 
 
 🚫 Dataset Handling (Important)
@@ -167,5 +156,6 @@ Improve prediction resolution
 
 
 Deploy using Streamlit or Flask
+
 
 
