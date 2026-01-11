@@ -15,3 +15,15 @@ data/era5_raw/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+# Large data & outputs
+outputs/
+data/
+*.npy
+*.nc
+
+# Jupyter cache
+.ipynb_checkpoints/
+
+
