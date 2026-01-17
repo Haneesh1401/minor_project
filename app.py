@@ -8,12 +8,19 @@ import plotly.graph_objects as go
 import numpy as np
 import xarray as xr
 from sklearn.metrics import mean_absolute_error, mean_squared_error
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR / "outputs" / "visuals" / "dust_visualization_dataset.nc"
+
+dust_ds = xr.open_dataset(DATA_PATH)
+
 
 # =========================
 # LOAD DATA (CRITICAL)
 # =========================
 # This replaces notebook memory
-dust_ds = xr.load_dataset("outputs/dust_visualization_dataset.nc")
+dust_ds = xr.load_dataset("outputs/visuals/dust_visualization_dataset.nc")
 
 # Simulated prediction layer (DL-ready placeholder)
 predicted_ds = dust_ds.shift(time=-1)
