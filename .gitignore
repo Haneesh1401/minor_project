@@ -17,11 +17,7 @@ data/era5_raw/
 Thumbs.db
 
 
-# Large data & outputs
-outputs/
-data/
-*.npy
-*.nc
+
 
 # Jupyter cache
 .ipynb_checkpoints/
