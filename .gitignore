@@ -1,38 +1,36 @@
-# Virtual environment
+# =========================
+# Python / Virtual Env
+# =========================
 venv/
-
-# Jupyter
-.ipynb_checkpoints/
 __pycache__/
+*.pyc
 
-# Large data files
-data/raw_modis/
-data/era5_raw/
-*.tif
-*.hdf
-*.nc
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
 
+# =========================
 # OS files
+# =========================
 .DS_Store
 Thumbs.db
 
+# =========================
+# Raw Data (never versioned)
+# =========================
+data/
+*.tif
+*.hdf
 
-
-
-# Jupyter cache
-.ipynb_checkpoints/
-
-# Ignore full research datasets
-outputs/dust_visualization_dataset.nc
-outputs/*.npy
-
-# Allow lightweight deployment dataset
-!outputs/visuals/dust_visualization_dataset_deploy.nc
-
-# Ignore heavy research data
+# =========================
+# Research Outputs (heavy)
+# =========================
 outputs/*.npy
 outputs/*.nc
 
-# Allow lightweight deploy dataset
+# =========================
+# Allow DEPLOYMENT dataset only
+# =========================
 !outputs/visuals/
 !outputs/visuals/dust_visualization_dataset_deploy.nc
