@@ -22,4 +22,10 @@ Thumbs.db
 # Jupyter cache
 .ipynb_checkpoints/
 
+# Ignore full research datasets
+outputs/dust_visualization_dataset.nc
+outputs/*.npy
+
+# Allow lightweight deployment dataset
+!outputs/visuals/dust_visualization_dataset_deploy.nc
 
