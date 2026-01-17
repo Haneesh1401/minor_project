@@ -29,3 +29,10 @@ outputs/*.npy
 # Allow lightweight deployment dataset
 !outputs/visuals/dust_visualization_dataset_deploy.nc
 
+# Ignore heavy research data
+outputs/*.npy
+outputs/*.nc
+
+# Allow lightweight deploy dataset
+!outputs/visuals/
+!outputs/visuals/dust_visualization_dataset_deploy.nc
